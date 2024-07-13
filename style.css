@@ -1,0 +1,72 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.project-container {
+    padding: 10px;
+    margin: 0;
+}
+
+.project {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+.project-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.porject-link {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.porject-link:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+@media (max-width : 900px) {
+    .project {
+        width: 70%;
+    }
+}
+
+@media (max-width : 767px) {
+    .project {
+            width: 70%;
+        }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        font-size: 1.1rcap;
+    }
+}
