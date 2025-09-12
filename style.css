@@ -87,5 +87,6 @@ body {
 
     .project p {
         font-size: 5px;
+        color: red;
     }
 }
