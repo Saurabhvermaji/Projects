@@ -1,32 +1,40 @@
-html,body {
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: black;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 .title {
+    font-size: clamp(21px, 2.5vw, 28px);
     text-align: center;
-    margin: 0;
-    margin-top: 10px;
 }
 
 .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 70%;
     padding: 10px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .project {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    width: 30%;
     height: auto;
     text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+}
+
+.project-title {
+    font-size: clamp(18px, 1.6vw, 24px);
 }
 
 .project-thumbnail {
@@ -34,39 +42,46 @@ html,body {
     border-radius: 10px;
 }
 
+.project p {
+    font-size: clamp(12px, 1.6vw, 16px);
+}
+
 .porject-link {
-    background-color: black;
+    background-color: transparent;
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
+    padding: 6px 20px;
     display: inline-block;
     margin-top: 10px;
-    border-radius: 10px;
-    font-weight: bold;
+    border-radius: 3px;
     transition: background-color 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.486);
 }
 
 .porject-link:hover {
-    background-color: greenyellow;
+    background-color: white;
     color: black;
 }
 
-@media (max-width : 900px) {
-    .project {
-        width: 70%;
+/* Tablet */
+@media (min-width: 580px) and (max-width: 923px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 90%;
     }
+
+    .porject-link {
+        padding: 6px 15px;
+        font-size: 15px;
+    }
+
 }
 
-@media (max-width : 767px) {
-    .project {
-            width: 70%;
-        }
-
-    .project-title {
-        font-size: 1.5rem;
-    }
-
-    .project p {
-        font-size: 1.1rcap;
+/* Desktop */
+@media (min-width: 924px) {
+    .project-container {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
     }
 }
