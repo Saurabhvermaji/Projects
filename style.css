@@ -90,6 +90,6 @@ body {
     }
 
     .project p {
-        font-size: clamp(8px, 1.6vw, 12px);
+        font-size: 75%;
     }
 }
