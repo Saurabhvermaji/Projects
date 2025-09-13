@@ -43,7 +43,7 @@ body {
 }
 
 .project p {
-    font-size: clamp(12px, 1.6vw, 16px);
+    font-size: 12px;
 }
 
 .porject-link {
@@ -69,6 +69,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         width: 90%;
+    }
+
+    .project p {
+        font-size: 14px;
     }
 
     .porject-link {
